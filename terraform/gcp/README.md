@@ -28,10 +28,10 @@ This page walks you through the steps required to deploy the [Online Boutique](h
     git clone https://github.com/GoogleCloudPlatform/microservices-demo.git
     ```
 
-1. Move into the `terraform/` directory which contains the Terraform installation scripts.
+1. Move into the `terraform/gcp` directory which contains the Terraform installation scripts.
 
     ```bash
-    cd microservices-demo/terraform
+    cd microservices-demo/terraform/gcp
     ```
 
 1. Open the `terraform.tfvars` file and replace `<project_id_here>` with the [GCP Project ID](https://cloud.google.com/resource-manager/docs/creating-managing-projects?hl=en#identifying_projects) for the `gcp_project_id` variable.
@@ -76,7 +76,7 @@ To avoid incurring charges to your Google Cloud account for the resources used i
 
 To remove the individual resources created for by Terraform without deleting the project:
 
-1. Navigate to the `terraform/` directory.
+1. Navigate to the `terraform/gcp` directory.
 
 1. Set `deletion_protection` to `false` for the `google_container_cluster` resource (GKE cluster).
 
